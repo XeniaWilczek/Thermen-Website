@@ -1,0 +1,403 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  --primary-color: rgb(0, 150, 255);
+  --background-color-sections: rgb(255, 245, 180);
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+  gap: 1rem;
+  font-size: 0.8 rem;
+}
+
+.nav-item,
+.footer-item {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.nav-item:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-item:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("hero.jpg");
+  background-color: rgb(194, 178, 128);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: calc(100vh - 5rem);
+}
+
+.main-heading {
+  font-family: "Style Script", cursive, sans-serif;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.subtitle {
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  margin: 2rem 0;
+}
+
+.button,
+.contact-button {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  width: fit-content;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.menu-button {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 85%;
+  margin: 10px auto;
+}
+.about-us {
+  display: grid;
+  gap: 2rem;
+}
+
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.section-heading {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0.1 rem 0;
+  width: fit-content;
+  border-bottom: 1px solid var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.about-us-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-column-images,
+.right-column-images {
+  width: 50%;
+}
+
+.left-column-images {
+  min-width: 50%;
+  height: auto;
+}
+
+.right-column-images {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: auto;
+}
+
+.opening-hours-section {
+  background-image: url("info.jpg");
+  background-color: var(--background-color-sections);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0.5rem 0;
+  margin: 0.5 rem 0;
+}
+
+.opening-hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opening-hours-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6rem;
+  margin-top: 1rem;
+}
+
+.opening-hours-paragraph1 {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-width: 120px;
+  color: var(--text-color);
+}
+
+.opening-hours-paragraph2 {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  min-width: 120px;
+}
+
+.contact-content {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem 0;
+  margin: 2rem;
+}
+
+.contact-image {
+  max-width: 60%;
+  position: center;
+  margin: auto;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-paragraph {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.contact-details-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.contact-button {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.contact-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-size: cover;
+  background-color: var(--background-color-sections);
+  padding: 2rem 1;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+  font-size: 0.8rem;
+  gap: 1rem;
+}
+
+.footer p {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .main-heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .nav-bar,
+  .footer-bar {
+    gap: 2rem;
+    font-size: 1rem;
+  }
+  .about-us-text {
+    font-size: 1rem;
+  }
+  .contact-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+
+  .contact-image {
+    max-width: 100%;
+    position: center;
+    margin: auto;
+  }
+  .heading {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .contact-paragraph {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .footer-bar {
+    flex-direction: row;
+  }
+}
+.footer {
+  margin-top: 4rem;
+  padding: 3rem 0;
+  gap: 3rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main-heading {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+  .nav-bar,
+  .footer-bar {
+    gap: 4rem;
+  }
+  .about-us {
+    align-items: center;
+    margin-top: 6rem;
+  }
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .about-us {
+    grid-template-columns: 1fr 1fr;
+    margin: 6rem auto;
+    align-items: center;
+  }
+  .about-images,
+  .right-column-images {
+    gap: 1rem;
+  }
+
+  .opening-hours {
+    margin: 0.9rem auto;
+    padding: 0.6rem auto;
+  }
+
+  .opening-hours-columns {
+    gap: 8rem;
+    margin: 1.5rem;
+  }
+
+  .opening-hours-paragraph1,
+  .opening-hours-paragraph2 {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+  .contact-details-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+
+  .contact-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .contact-image {
+    max-width: 80%;
+    position: center;
+    margin: auto;
+  }
+  .footer {
+    margin-top: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem auto;
+    padding: 40px;
+  }
+}
