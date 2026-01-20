@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  font-size: 0.9rem;
   background-color: white;
   color: black;
   font-family: "Montserrat", sans-serif;
@@ -96,7 +97,6 @@ header p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9rem;
   gap: 2rem;
   width: 50%;
 }
@@ -107,7 +107,7 @@ header p {
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
-  min-width: 4rem;
+  width: 300px;
 }
 
 .note {
@@ -116,6 +116,23 @@ header p {
 }
 
 @media only screen and (min-width: 600px) {
+  .nav-bar {
+    font-size: 1rem;
+    gap: 2rem;
+  }
+
+  .main-heading {
+    font-size: 4rem;
+    line-height: 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+
   .content {
     display: flex;
     flex-direction: row;
@@ -127,31 +144,26 @@ header p {
 }
 
 @media only screen and (min-width: 1000px) {
-  body {
-    font-size: 1rem;
-  }
-
   .nav-bar {
     gap: 2rem;
   }
 
   .main-heading {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 6rem;
+    line-height: 6.5rem;
   }
 
   .section-heading {
     font-size: 2rem;
-    margin-bottom: 2rem;
+  }
+
+  body {
+    font-size: 1.5rem;
   }
   .content {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-  }
-
-  .text {
-    font-size: 1.5rem;
   }
 
   .image {
