@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("hero.jpg");
+  background-image: url("./images/hero-image.jpg");
   background-color: rgb(194, 178, 128);
   background-blend-mode: overlay;
   background-size: cover;
