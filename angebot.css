@@ -54,7 +54,7 @@ body {
 
 .main-heading {
   font-family: "Style Script", cursive, sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .section {
@@ -161,7 +161,7 @@ header p {
   }
 
   .main-heading {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.5rem;
   }
 
@@ -199,7 +199,7 @@ header p {
   }
 
   .main-heading {
-    font-size: 6rem;
+    font-size: 4rem;
     line-height: 6.5rem;
   }
 

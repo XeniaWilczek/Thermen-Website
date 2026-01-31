@@ -178,7 +178,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 6rem;
+  gap: 2rem;
   margin-top: 1rem;
 }
 
@@ -209,7 +209,7 @@ body {
 }
 
 .contact-image {
-  max-width: 60%;
+  max-width: 100%;
   position: center;
   margin: auto;
 }
@@ -361,7 +361,7 @@ body {
   }
 
   .opening-hours-columns {
-    gap: 8rem;
+    gap: 4rem;
     margin: 1.5rem;
   }
 
