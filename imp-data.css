@@ -5,15 +5,16 @@ html {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-size: 0.8rem;
   background-color: white;
-  color: black;
   font-family: "Montserrat", sans-serif;
   --primary-color: rgb(0, 150, 255);
   --background-color-sections: rgb(255, 245, 180);
+  --text-color: black;
 }
 
 .heading1 {
@@ -29,17 +30,17 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   text-align: center;
   height: 5rem;
   gap: 1rem;
-  font-size: 0.8 rem;
+  font-size: 0.8rem;
   background-color: var(--background-color-sections);
 }
 
 .nav-item,
 .footer-item {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -62,10 +63,11 @@ body {
   justify-content: center;
   align-items: flex-start;
   text-align: left;
-  gap: 2rem;
-  margin: 6rem;
+  gap: 1.5rem;
   max-width: 800px;
   width: 100%;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
 }
 
 .footer {
@@ -73,10 +75,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   background-size: cover;
   background-color: var(--background-color-sections);
-  padding: 2rem;
+  padding: 2rem 0;
   text-align: center;
   margin-top: 2rem;
 }
@@ -115,11 +117,11 @@ body {
   .footer-bar {
     flex-direction: row;
   }
-}
-.footer {
-  margin-top: 4rem;
-  padding: 3rem 0;
-  gap: 3rem;
+  .footer {
+    margin-top: 4rem;
+    padding: 3rem 0;
+    gap: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1000px) {

@@ -5,15 +5,18 @@ html {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+:root {
+  --primary-color: rgb(0, 150, 255);
+  --background-color-sections: rgb(255, 245, 180);
+  --text-color: black;
+}
 body {
   font-size: 0.9rem;
   background-color: white;
-  color: black;
   font-family: "Montserrat", sans-serif;
-  --primary-color: rgb(0, 150, 255);
-  --background-color-sections: rgb(255, 245, 180);
 }
 
 .nav-bar {
@@ -24,7 +27,7 @@ body {
   text-align: center;
   height: 5rem;
   gap: 1rem;
-  font-size: 0.8 rem;
+  font-size: 0.8rem;
 }
 
 .nav-item,
@@ -87,16 +90,18 @@ header p {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  margin: 0;
   padding: 1rem 0;
-  margin: 1rem;
 }
 
 .image-div {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .image {
-  max-width: 100%;
+  width: 100%;
 }
 
 .text {
@@ -105,7 +110,7 @@ header p {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  width: 50%;
+  width: 100%;
 }
 
 .hours-price {
@@ -181,6 +186,10 @@ header p {
     flex-direction: row-reverse;
   }
 
+  .image-div,
+  .text {
+    width: 50%;
+  }
   .footer-bar {
     flex-direction: row;
   }
@@ -215,7 +224,10 @@ header p {
     flex-direction: row;
     gap: 0.5rem;
   }
-
+  .image-div,
+  .text {
+    width: 50%;
+  }
   .image {
     max-width: 80%;
   }
