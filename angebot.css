@@ -13,6 +13,7 @@ html {
   --background-color-sections: rgb(255, 245, 180);
   --text-color: black;
 }
+
 body {
   font-size: 0.9rem;
   background-color: white;
@@ -32,25 +33,20 @@ body {
 
 .nav-item,
 .footer-item {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  transition: color 0.2s ease-in-out;
 }
 
-.nav-item:hover {
-  color: var(--primary-color);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
+.nav-item:hover,
 .footer-item:hover {
   color: var(--primary-color);
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
 }
 
-.impressum {
+.active {
   text-decoration: underline;
   color: var(--primary-color);
 }
@@ -63,14 +59,14 @@ body {
 .section {
   margin: 2rem 0;
 }
+
 .section-heading {
   font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  margin: 2rem 0;
+  margin: 2rem 0 1rem;
   width: fit-content;
   border-bottom: 1px solid var(--primary-color);
-  margin-bottom: 1rem;
 }
 
 header {
@@ -130,12 +126,10 @@ header p {
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 1rem;
-  background-size: cover;
+  gap: 2rem;
   background-color: var(--background-color-sections);
-  padding: 2rem;
+  padding: 2rem 0;
   text-align: center;
   margin-top: 2rem;
 }
@@ -146,7 +140,6 @@ header p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 5rem;
   font-size: 0.8rem;
   gap: 1rem;
 }
@@ -154,8 +147,7 @@ header p {
 .footer p {
   color: var(--text-color);
   font-size: 0.8rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 
 @media only screen and (min-width: 600px) {
@@ -173,6 +165,7 @@ header p {
   .section-heading {
     font-size: 1.5rem;
   }
+
   body {
     font-size: 1.2rem;
   }
@@ -182,6 +175,7 @@ header p {
     flex-direction: row;
     gap: 0.5rem;
   }
+
   .sauna {
     flex-direction: row-reverse;
   }
@@ -190,13 +184,13 @@ header p {
   .text {
     width: 50%;
   }
+
   .footer-bar {
     flex-direction: row;
   }
 
   .footer {
     margin-top: 4rem;
-    padding: 3rem 0;
     gap: 3rem;
   }
 }
@@ -204,7 +198,7 @@ header p {
 @media only screen and (min-width: 1000px) {
   .nav-bar,
   .footer-bar {
-    gap: 2rem;
+    gap: 4rem;
   }
 
   .main-heading {
@@ -219,17 +213,20 @@ header p {
   body {
     font-size: 1.5rem;
   }
+
   .content {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
   }
+
   .image-div,
   .text {
     width: 50%;
   }
+
   .image {
-    max-width: 80%;
+    max-width: 50%;
   }
 
   .note {
@@ -238,8 +235,5 @@ header p {
 
   .sauna {
     flex-direction: row-reverse;
-  }
-  .footer {
-    margin-top: 6rem;
   }
 }
