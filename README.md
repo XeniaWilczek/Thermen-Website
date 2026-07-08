@@ -1,6 +1,6 @@
 # **Therme Stille Oase Website**
 ![Vorschau der Website](./images/previewThermen-Website.png)
-Die Website der fiktiven Therme „Stille Oase“ ist mehrseitig. Die Hauptseite bietet einen Überblick über die Therme. Hierfür habe ich eine intuitive One-Page-Navigation mit sanftem Scrollverhalten eingebaut. Details zum Angebot, Impressum und Datenschutz sind auf separaten Seiten aufgelistet. Das Design ist responsiv, nutzt moderne CSS-Grid- und Flexbox-Layouts für verschiedene Displaygrößen und wurde mit reinem HTML und CSS umgesetzt.
+Die Website der fiktiven Therme „Stille Oase“ ist mehrseitig. Die Hauptseite bietet einen Überblick über die Therme. Hierfür habe ich eine intuitive One-Page-Navigation mit sanftem Scrollverhalten eingebaut. Details zum Angebot, Impressum und Datenschutz sind auf separaten Seiten aufgelistet. Das Design ist responsiv, nutzt CSS-Grid- und Flexbox-Layouts für verschiedene Displaygrößen und wurde mit reinem HTML und CSS umgesetzt.
 
 ## Voraussetzungen
 Für den Betrieb dieses Projekts sind keine Laufzeitumgebungen, Datenbanken oder Serverkonfigurationen erforderlich. Zum Betrachten und Bearbeiten werden lediglich benötigt:
@@ -32,8 +32,6 @@ Die Website ist für das Hosting über GitHub Pages optimiert. Das Deployment er
 2. Wählen Sie unter Build and deployment den gewünschten Quell-Branch (main oder master) aus.
 3. Nach dem Speichern generiert GitHub automatisch eine öffentlich erreichbare URL unter dem Schema: https://github.io
 
-## Mitwirken
-Dieses Repository dient ausschließlich als persönliches Übungs- und Portfolio-Projekt. Aus diesem Grund werden derzeit keine externen Code-Beiträge, Issue-Meldungen oder Pull Requests entgegengenommen.
 
 ## Lizenz
 Das Projekt wurde von Xenia Wilczek entwickelt. Alle Rechte am Quellcode sowie an der gestalterischen Umsetzung sind vorbehalten (All Rights Reserved). Die rechtlichen Texte im Impressum und in der Datenschutzerklärung wurden zu Demonstrationszwecken über e-Recht24 generiert.
